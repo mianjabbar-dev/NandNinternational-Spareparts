@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>N&amp;Ninternational@AshSpareparts — Automotive Spare Parts Showcase</title>
+  <meta name="description" content="Explore essential automotive components, from engine filtration and braking systems to electrical components, lighting, and transmission parts in a visual product showcase." />
+  <meta property="og:title" content="N&Ninternational@AshSpareparts — Automotive Spare Parts Showcase" />
+  <meta property="og:description" content="Explore essential automotive components, from engine filtration and braking systems to electrical components, lighting, and transmission parts." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="public/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="src/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#products">Skip to products</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="N&Ninternational at Ash Spareparts — home">
+        <span class="brand-mark" aria-hidden="true">N&amp;N</span>
+        <span class="brand-text">N&amp;Ninternational<small>@AshSpareparts</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+        <a href="#top">Home</a>
+        <a href="#products">Products</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Product Showcase &bull; Automotive Components</p>
+          <h1>Automotive Parts.<br />Built Around Performance.</h1>
+          <p class="hero-lead">Explore essential automotive components, from engine filtration and braking systems to electrical components, lighting, and transmission parts.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#products">Explore Products</a>
+            <a class="btn btn-secondary" href="#categories">Browse Categories</a>
+          </div>
+          <p class="hero-note">A visual catalog for discovery — browse components by system, search by name, and view each part up close.</p>
+        </div>
+        <div class="hero-media">
+          <img src="public/images/products/brake-disc-rotor.jpg" alt="Automotive brake disc rotor and caliper shown with the road wheel removed" width="900" height="700" fetchpriority="high" />
+          <p class="hero-caption">Braking, filtration, cooling, electrical &amp; transmission — explored in one catalog.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="section" id="categories" aria-labelledby="categories-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Browse by system</p>
+          <h2 id="categories-title">Categories</h2>
+          <p>Select a system to filter the catalog instantly.</p>
+        </div>
+        <div class="category-grid" id="categoryGrid" role="group" aria-label="Product categories"></div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section section-alt" id="products" aria-labelledby="products-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Catalog</p>
+          <h2 id="products-title">Product Showcase</h2>
+          <p>Ten essential component types, presented with real product photography stored locally in this project.</p>
+        </div>
+
+        <div class="toolbar">
+          <div class="search-box">
+            <label class="visually-hidden" for="searchInput">Search automotive spare parts</label>
+            <input type="search" id="searchInput" placeholder="Search automotive spare parts..." autocomplete="off" />
+            <button type="button" id="clearSearch" class="clear-btn" aria-label="Clear search" hidden>&times;</button>
+          </div>
+          <p class="result-count" id="resultCount" aria-live="polite"></p>
+        </div>
+
+        <div class="active-filter" id="activeFilter" hidden>
+          <span>Category: <strong id="activeFilterLabel"></strong></span>
+          <button type="button" id="resetFilters" class="text-btn">Reset all filters</button>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <h3>No matching products found.</h3>
+          <p>Try another search term or choose a different category.</p>
+          <button type="button" class="btn btn-primary" id="emptyReset">Reset search &amp; filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container narrow">
+        <p class="eyebrow">About this catalog</p>
+        <h2 id="about-title">Explore Automotive Essentials</h2>
+        <p>N&amp;Ninternational@AshSpareparts presents a visual catalog of automotive spare parts, helping visitors explore essential components across engine systems, braking, electrical equipment, cooling, lighting, and transmission.</p>
+        <p>This website is a product showcase, not an online store. It is designed for discovery: compare component types visually, understand what each part does, and navigate by the vehicle system it belongs to.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT / DISCOVERY -->
+    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+      <div class="container narrow">
+        <p class="eyebrow">Continue exploring</p>
+        <h2 id="contact-title">Find the Component You Need</h2>
+        <p>Start with a category above, or search the catalog for a specific component — filtration, braking, spark and charging, cooling, lighting, or transmission.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#products">Explore Products</a>
+          <a class="btn btn-secondary" href="#categories">Browse Categories</a>
+        </div>
+        <p class="contact-note">Contact details will be shown here when provided by the website owner. No details have been added to this showcase, so none are displayed.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">N&amp;Ninternational@AshSpareparts</p>
+        <p class="footer-desc">Automotive spare parts product showcase — engine, braking, electrical, cooling, lighting and transmission components.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <p class="footer-heading">Navigate</p>
+        <a href="#top">Home</a>
+        <a href="#products">Products</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div>
+        <p class="footer-heading">Credits</p>
+        <p>Concept &amp; Direction: Dr. Nadeem Nazir &amp; Associates</p>
+        <p>Website Presentation: Dr. Nadeem Nazir &amp; Associates</p>
+        <p>Professional Credits: Dr. Nadeem Nazir &amp; Associates</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> N&amp;Ninternational@AshSpareparts. All rights reserved.</p>
+      <p class="photo-credits">Product photographs via Wikimedia Commons (CC BY / CC BY-SA / CC0 / Public Domain). Full credits in IMAGE_SOURCES.md in this project.</p>
+      <p>Powered by <a href="https://diginixit.com/" target="_blank" rel="noopener noreferrer">Diginixit</a></p>
+    </div>
+  </footer>
+
+  <!-- PRODUCT DETAIL MODAL -->
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" id="productModal">
+      <button type="button" class="modal-close" id="modalClose" aria-label="Close details">&times;</button>
+      <img id="modalImage" src="" alt="" width="800" height="600" />
+      <div class="modal-body">
+        <p class="card-category" id="modalCategory"></p>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="src/data/products.js"></script>
+  <script src="src/js/app.js"></script>
+</body>
+</html>
